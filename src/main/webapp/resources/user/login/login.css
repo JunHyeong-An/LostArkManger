@@ -1,0 +1,34 @@
+table, td, tr {
+    border: 1px solid black;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin-top: 30px;
+    font-size: 9pt;
+}
+
+span {
+    padding: 0 5px;
+}
+
+a:not(:last-child){
+    border-right: 1px solid gray;
+}
+
+table input {
+    border: none;
+    outline: none;
+    font-size: 11pt;
+}
+
+#login_btn {
+    border: none;
+    background-color: white;
+}

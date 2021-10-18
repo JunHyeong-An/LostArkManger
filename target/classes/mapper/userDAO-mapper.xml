@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lakmanager.model.UserDAO">
+	<select id="getUserList" resultType="com.lakmanager.model.UserDTO">
+		SELECT * FROM lak_users
+	</select>
+	
+	<select id="getUser" resultType="com.lakmanager.model.UserDTO">
+		SELECT * FROM lak_users WHERE ID=#{id}
+	</select>
+	
+	<insert id="addUser">
+		INSERT INTO lak_users VALUES (#{id}, #{password}, #{name}, #{server})
+	</insert>
+	
+	<update id="modifyUser">
+		UPDATE lak_users SET PASSWORD = #{password}, NAME = #{name}, SERVER = #{server} WHERE ID = #{id} 
+	</update>
+	
+	<delete id="deleteUser">
+		DELETE FROM lak_users WHERE ID = #{id}
+	</delete>
+	
+	<delete id="deleteAllUser">
+		delete from lak_users
+	</delete>
+	
+	<select id="login" resultType="com.lakmanager.model.UserDTO">
+		SELECT * FROM lak_users WHERE ID = #{id} and PASSWORD = #{password}
+	</select>
+</mapper>

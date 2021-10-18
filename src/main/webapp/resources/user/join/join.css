@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    margin: 3px 10px;
+}
+
+input {
+    font-size: 11pt;
+    border: none;
+    outline: none;
+}
+
+#join_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+table, td, tr {
+    border: 1px solid black;
+}
+
+tr:last-child {
+    text-align: right;
+}
+
+#id_permission {
+    font-size: 9pt;
+    padding: 0 10px;
+}
+
+#password_rule {
+    font-size: 9pt;
+    color: gray;
+    padding: 0 10px;
+}
