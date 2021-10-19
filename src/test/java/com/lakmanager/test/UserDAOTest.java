@@ -59,7 +59,6 @@ public class UserDAOTest {
 	@Test
 	public void modifyUserTest() {
 		UserDTO dto = dao.getUser("test");
-		
 		dto.setId("modifyTest");
 		dao.modifyUser(dto);
 		
