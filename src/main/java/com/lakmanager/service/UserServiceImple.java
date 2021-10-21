@@ -32,9 +32,8 @@ public class UserServiceImple implements UserService {
 	}
 
 	@Override
-	public void logout() {
-		// TODO Auto-generated method stub
-
+	public void logout(HttpSession session) {
+		session.invalidate();
 	}
 
 	@Override

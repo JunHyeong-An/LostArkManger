@@ -1,5 +1,5 @@
 package com.lakmanager.model;
 
 public interface UserRestDAO {
-	UserDTO idCheck(String id);
+	int idCheck(String id);
 }

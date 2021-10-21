@@ -8,30 +8,30 @@
 		<table>
 			<tr>
 				<td>ID</td>
-				<td><input name="id" autocomplete="off"></td>
+				<td><input id="id" name="id" autocomplete="off"></td>
 				<td>
-					<button id="id_check_btn">ID중복확인</button> <span id="id_permission">사용가능한 아이디입니다.</span>
+					<button id="id_check_btn">ID중복확인</button> <span id="id_permission"></span>
 				</td>
 			</tr>
 			<tr>
 				<td>비밀번호</td>
-				<td><input type="password" name="password"></td>
+				<td><input id="password" type="password" name="password"></td>
 				<td id="password_rule">영대문자 1자이상, 특수기호 1자이상을 포함시켜주세요</td>
 			</tr>
 			<tr>
 				<td>비밀번호 확인</td>
-				<td colspan="2"><input type="password"></td>
+				<td colspan="2"><input id="password_check" type="password"></td>
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td colspan="2"><input name="name"></td>
+				<td colspan="2"><input id="name" name="name"></td>
 			</tr>
 			<tr>
 				<td>로스트아크 서버</td>
-				<td colspan="2"><input name="server"></td>
+				<td colspan="2"><input id="server" name="server"></td>
 			</tr>
 			<tr>
-				<td colspan="3"><button id="join_btn">회원가입</button></td>
+				<td colspan="3"><button type="button" id="join_btn">회원가입</button></td>
 			</tr>
 		</table>
 	</section>

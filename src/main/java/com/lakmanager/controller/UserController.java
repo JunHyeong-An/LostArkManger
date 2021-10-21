@@ -23,7 +23,7 @@ public class UserController {
 	@PostMapping("/join")
 	public String join(UserDTO dto) {
 		us.join(dto);
-		return "/login";
+		return "redirect:/user/login";
 	}
 	
 	@GetMapping("login")
@@ -35,5 +35,11 @@ public class UserController {
 		
 		if(flag) return "/index";
 		else return "redirect:/user/login";
+	}
+	
+	@GetMapping("/logout")
+	public String logout(HttpSession sessoin) {
+		us.logout(sessoin);
+		return "redirect:/";
 	}
 }

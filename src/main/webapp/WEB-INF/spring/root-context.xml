@@ -30,6 +30,7 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:mapper/userDAO-mapper.xml</value>
+				<value>classpath:mapper/userRestDAO-mapper.xml</value>
 			</list>
 		</property>
 	</bean>
