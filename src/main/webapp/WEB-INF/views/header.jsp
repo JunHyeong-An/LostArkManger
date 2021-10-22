@@ -24,7 +24,7 @@
         	
         	<c:if test="${not empty user }">
 	            <a href="${path }/user/logout" class="user_menu_child">로그아웃</a>
-    	        <a href="${path }/user/join" class="user_menu_child">마이페이지</a>	
+    	        <a href="${path }/user/modify" class="user_menu_child">마이페이지</a>	
         	</c:if>
         </div>
         <input id="path" type="hidden" value="${path }">

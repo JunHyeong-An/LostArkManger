@@ -42,4 +42,8 @@ public class UserController {
 		us.logout(sessoin);
 		return "redirect:/";
 	}
+	
+	@GetMapping("/modify")
+	public void modify() {}
+	
 }
