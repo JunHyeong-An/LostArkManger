@@ -1,0 +1,14 @@
+#container {
+    display: flex;
+}
+
+table, td, tr {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+
+aside {
+    margin-right: 200px;
+}
