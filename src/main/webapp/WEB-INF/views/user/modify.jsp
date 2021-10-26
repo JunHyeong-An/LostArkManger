@@ -12,33 +12,25 @@
 
         <main>
             <div id="modify_user_info">
-                <form id="modify_user_form">
+                <form method="post" id="modify_user_form">
                     <table>
                         <tr>
                             <td>ID</td>
-                            <td><input id="id" name="id" autocomplete="off"></td>
-                        </tr>
-                        <tr>
-                            <td>비밀번호</td>
-                            <td><input id="modify_password" type="password" name="password"></td>
-                            <td id="password_rule">영대문자 1자이상, 특수기호 1자이상을 포함시켜주세요</td>
-                        </tr>
-                        <tr>
-                            <td>비밀번호 확인</td>
-                            <td colspan="2"><input id="modify_password_check" type="password"></td>
+                            <td><input id="modify_id" name="id" autocomplete="off" value="${user.id }"></td>
                         </tr>
                         <tr>
                             <td>이름</td>
-                            <td colspan="2"><input id="modify_name" name="name"></td>
+                            <td colspan="2"><input id="modify_name" name="name" value="${user.name }" required></td>
                         </tr>
                         <tr>
                             <td>로스트아크 서버</td>
-                            <td colspan="2"><input id="modify_server" name="server"></td>
+                            <td colspan="2"><input id="modify_server" name="server" value="${user.server }" required></td>
                         </tr>
                         <tr>
-                            <td colspan="3"><button type="button" id="modify_btn">회원 정보 수정</button></td>
+                            <td colspan="3"><button id="modify_btn">회원 정보 수정</button></td>
                         </tr>
                     </table>
+                    <input type="hidden" name="password" value="${user.password }">
                 </form>
             </div>
 

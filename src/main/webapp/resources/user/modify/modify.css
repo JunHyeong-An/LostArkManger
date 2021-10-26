@@ -2,6 +2,11 @@
     display: flex;
 }
 
+input {
+	outline: none;
+	border: none;
+}
+
 table, td, tr {
     border: 1px solid black;
 }

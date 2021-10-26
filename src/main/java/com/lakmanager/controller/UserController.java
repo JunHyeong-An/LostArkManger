@@ -46,4 +46,11 @@ public class UserController {
 	@GetMapping("/modify")
 	public void modify() {}
 	
+	@PostMapping("/modify")
+	public String modify(UserDTO dto) {
+		us.modifyUser(dto);
+		
+		return "redirect:/user/logout";
+	}
+	
 }

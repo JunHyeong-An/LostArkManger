@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lakmanager.model.CharaterDAO">
+	<insert id="addCharater">
+		insert into lak_users_char values (#{id}, #{charName}, #{charLevel})
+	</insert>
+	
+	<delete id="deleteCharater">
+		delete from lak_users_char where char_name = #{charName}
+	</delete>
+	
+	<select id="selectCharater" resultType="com.lakmanager.model.CharaterDTO">
+		select * from lak_users_char where char_name = #{charName}
+	</select>
+	
+	<delete id="deleteAll">
+		delete from lak_users_char
+	</delete>
+</mapper>

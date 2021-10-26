@@ -31,6 +31,7 @@
 			<list>
 				<value>classpath:mapper/userDAO-mapper.xml</value>
 				<value>classpath:mapper/userRestDAO-mapper.xml</value>
+				<value>classpath:mapper/charaterDAO-mapper.xml</value>
 			</list>
 		</property>
 	</bean>

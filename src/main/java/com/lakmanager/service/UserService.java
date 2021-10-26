@@ -9,4 +9,5 @@ public interface UserService {
 	boolean login(UserDTO dto, HttpSession session);
 	void logout(HttpSession session);
 	void withdrawal(UserDTO dto); 
+	void modifyUser(UserDTO dto);
 }

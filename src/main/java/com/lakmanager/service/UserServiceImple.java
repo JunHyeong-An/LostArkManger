@@ -41,5 +41,8 @@ public class UserServiceImple implements UserService {
 		// TODO Auto-generated method stub
 
 	}
-
+	@Override
+	public void modifyUser(UserDTO dto) {
+		dao.modifyUser(dto);	
+	}
 }
