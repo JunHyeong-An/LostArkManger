@@ -1,4 +1,4 @@
-package com.lakmanager.service;
+package com.lakmanager.serviceInterface;
 
 import javax.servlet.http.HttpSession;
 

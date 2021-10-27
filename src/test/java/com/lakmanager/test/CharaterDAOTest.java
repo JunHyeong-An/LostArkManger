@@ -14,8 +14,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import com.lakmanager.model.CharaterDAO;
-import com.lakmanager.model.CharaterDTO;
+import com.lakmanager.model.CharacterDAO;
+import com.lakmanager.model.CharacterDTO;
 import com.lakmanager.model.UserDTO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -23,22 +23,22 @@ import com.lakmanager.model.UserDTO;
 @WebAppConfiguration
 public class CharaterDAOTest {
 	@Autowired
-	CharaterDAO dao;
+	CharacterDAO dao;
 	
-	List<CharaterDTO> list = new ArrayList<CharaterDTO>();
+	List<CharacterDTO> list = new ArrayList<CharacterDTO>();
 	
 	@Before
 	public void setUp() {
 		dao.deleteAll();
-		list.add(new CharaterDTO("test", "charTest", "1415"));
-		list.add(new CharaterDTO("test", "charTest2", "1370"));
-		list.add(new CharaterDTO("test", "charTest3", "1430"));
-		list.add(new CharaterDTO("test", "charTest4", "1325"));
+		list.add(new CharacterDTO("test", "charTest", "1415"));
+		list.add(new CharacterDTO("test", "charTest2", "1370"));
+		list.add(new CharacterDTO("test", "charTest3", "1430"));
+		list.add(new CharacterDTO("test", "charTest4", "1325"));
 	}
 	
 	@Test
 	public void addTest() {
-		for(CharaterDTO dto : list) 
+		for(CharacterDTO dto : list) 
 			dao.addCharater(dto);
 		
 		assertThat(dao.selectCharater("charTest").getId(), is("test"));

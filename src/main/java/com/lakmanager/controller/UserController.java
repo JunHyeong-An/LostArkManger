@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.lakmanager.model.UserDTO;
-import com.lakmanager.service.UserService;
+import com.lakmanager.serviceInterface.UserService;
 
 @Controller
 @RequestMapping("/user")
@@ -49,7 +49,6 @@ public class UserController {
 	@PostMapping("/modify")
 	public String modify(UserDTO dto) {
 		us.modifyUser(dto);
-		
 		return "redirect:/user/logout";
 	}
 	

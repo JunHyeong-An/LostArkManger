@@ -1,9 +1,9 @@
 package com.lakmanager.model;
 
-public class CharaterDTO {
+public class CharacterDTO {
 	private String id, charName, charLevel;
 	
-	public CharaterDTO(String id, String charName, String charLevel) {
+	public CharacterDTO(String id, String charName, String charLevel) {
 		this.id = id;
 		this.charName = charName;
 		this.charLevel = charLevel;

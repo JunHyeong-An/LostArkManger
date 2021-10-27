@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.lakmanager.model.CharaterDAO">
+<mapper namespace="com.lakmanager.model.CharacterDAO">
 	<insert id="addCharater">
 		insert into lak_users_char values (#{id}, #{charName}, #{charLevel})
 	</insert>
@@ -11,8 +11,12 @@
 		delete from lak_users_char where char_name = #{charName}
 	</delete>
 	
-	<select id="selectCharater" resultType="com.lakmanager.model.CharaterDTO">
+	<select id="selectCharater" resultType="com.lakmanager.model.CharacterDTO">
 		select * from lak_users_char where char_name = #{charName}
+	</select>
+	
+	<select id="selectAllCharacter" resultType="com.lakmanager.model.CharacterDTO">
+		select * from lak_users_char where id = #{id}
 	</select>
 	
 	<delete id="deleteAll">
