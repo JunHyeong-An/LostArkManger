@@ -12,6 +12,7 @@ import com.lakmanager.serviceInterface.UserService;
 
 @Service
 public class UserServiceImple implements UserService {
+	
 	@Autowired
 	UserDAO dao;
 	
